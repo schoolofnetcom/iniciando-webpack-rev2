@@ -1,9 +1,9 @@
-var liquidos = [
-    'cerveja',
-    'agua',
-    'suco',
-    'vinho',
-    'bebidas'
-];
-
-module.exports = liquidos;
+define('amd',[], function(){
+   return [
+       'cerveja',
+       'agua',
+       'suco',
+       'vinho',
+       'bebidas'
+   ];
+});

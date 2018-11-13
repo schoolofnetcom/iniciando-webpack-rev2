@@ -1,11 +1,21 @@
-import liquidos from './es6';
-// import module1 from './module1';
-// import module2 from './module2';
-// import module3 from './module3';
+Promise.all([
+    import('./es6'),
+    import('./es6'),
+]).then(function(modules){
+    var module1 = console.log(modules[0], modules[1]);
+});
 
-console.log(liquidos);
+// import('./es6')
+//     .then(function (liquidos) {
+//         console.log(liquidos.default);
+//     });
+//
+// import('./modulo')
+//     .then(function (modulo) {
+//         console.log(liquidos.default);
+//     });
+//
 
-function funcao(){
-    var variavel = require('module')
+//import algumacoisa from 'module';
 
-}
+//async e await

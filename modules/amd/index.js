@@ -1,6 +1,7 @@
-//sincrono
-var liquidos = require('./commonjs');
-//var xpto = require('./outro-arquivo');
-//var outromodulo = require('./outro-modulo');
+require(['./amd'], function (liquidos) {
+    console.log(liquidos);
+});
 
-console.log(liquidos);
+// require(['./amd', './module1', './module2'], function (liquidos, module1, module2) {
+//     console.log(liquidos);
+// });
